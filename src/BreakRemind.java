@@ -19,17 +19,21 @@ public class BreakRemind {
         }
     }
 
-    public void breakRemind() {
+    public void breakRemind() throws InterruptedException {
         Toolkit t = Toolkit.getDefaultToolkit ();
         for (int i = 0; i < 5; i++) {
+            System.out.println ("rest!!!");
             t.beep ();
+            Thread.sleep (1000);
         }
     }
 
-    public void restEnd() {
+    public void restEnd() throws InterruptedException {
         Toolkit t = Toolkit.getDefaultToolkit ();
         for (int i = 0; i < 5; i++) {
+            System.out.println ("work!!!");
             t.beep ();
+            Thread.sleep (1000);
         }
     }
 }
